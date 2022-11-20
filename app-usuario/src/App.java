@@ -7,9 +7,8 @@ import com.dbgenerator.Construtor;
 public class App {
     public static void main(String[] args) throws Exception {
         Construtor construtor = new Construtor(getStringJson());
-        // construtor.executar();
+        construtor.executar();
         System.out.println(construtor.getSql());
-        // System.out.println(getStringJson());
     }
 
     private static String getStringJson() throws IOException {

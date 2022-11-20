@@ -1,0 +1,59 @@
+{
+    "gerenciador": "mysql",
+    "conexao": {
+        "host": "localhost",
+        "port": "3306",
+        "user": "root",
+        "pass": "123456"
+    },
+    "baseDados": {
+        "nome": "vendas",
+        "tabelas": [
+            {
+                "nome": "vendedor",
+                "colunas": [
+                    {
+                        "nome": "id",
+                        "tipo": "INT",
+                        "chavePrimaria": true,
+                        "naoNula": true,
+                        "serial": true
+                    },
+                    {
+                        "nome": "nome",
+                        "tipo": "TEXT",
+                        "chavePrimaria": false,
+                        "naoNula": true,
+                        "serial": false
+                    }
+                ]
+            },
+            {
+                "nome": "produto",
+                "colunas": [
+                    {
+                        "nome": "id",
+                        "tipo": "INT",
+                        "chavePrimaria": true,
+                        "naoNula": true,
+                        "serial": true
+                    },
+                    {
+                        "nome": "nome",
+                        "tipo": "TEXT",
+                        "chavePrimaria": false,
+                        "naoNula": true,
+                        "serial": false
+                    },
+                    {
+                        "nome": "vendedor",
+                        "tipo": "INT",
+                        "chavePrimaria": false,
+                        "naoNula": true,
+                        "serial": false
+                    }
+                ]
+            }
+        ]
+    }
+}

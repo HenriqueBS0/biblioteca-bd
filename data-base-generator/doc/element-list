@@ -1,0 +1,6 @@
+com.dbgenerator
+com.dbgenerator.conexao
+com.dbgenerator.estruturas
+com.dbgenerator.gerenciadores
+com.dbgenerator.gerenciadores.montadores.interfaces
+com.dbgenerator.gerenciadores.montadores.mysql
